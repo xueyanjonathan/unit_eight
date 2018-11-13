@@ -11,6 +11,7 @@ def f_to_c():
 
 
 fahrenheitValue = tkinter.StringVar()
+fahrenheitValue.set("0")
 celsiusValue = tkinter.StringVar()
 
 fahrenheitLabel = tkinter.Label(root, text="degrees F:")
@@ -23,9 +24,9 @@ celsiusLabel = tkinter.Label(root, text="degrees C:")
 celsiusLabel.grid(row=2, column=1)
 
 celsiusAnswer = tkinter.Label(root, textvariable=celsiusValue)
-celsiusAnswer.grid(row=2, column=2)
+celsiusAnswer.grid(row=2, column=2, sticky="W")
 
 convertButton = tkinter.Button(root, text="Convert", command=f_to_c)
-convertButton.grid(row=3, column=1)
+convertButton.grid(row=3, column=1, columnspan=2)
 
 root.mainloop()
