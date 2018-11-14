@@ -1,105 +1,188 @@
+# 11/14/2018
+# Jonathan Lin
+# GUI Calculator
+# Using GUI to create a calculator which can execute addition, subtraction, multiplication, division,
+# square, percentage, and clear.
+
 import tkinter
 
-root = tkinter.Tk()
-root.title("Jonathan's calculator")
+root = tkinter.Tk()  # Create a root window which everything will be in
+root.title("Jonathan's calculator")  # The title of the window
 
 
 def one():
+    """
+    Put a string 1 in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "1")
 
 
 def two():
+    """
+    Put a string 2 in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "2")
 
 
 def three():
+    """
+    Put a string 3 in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "3")
 
 
 def four():
+    """
+    Put a string 4 in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "4")
 
 
 def five():
+    """
+    Put a string 5 in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "5")
 
 
 def six():
+    """
+    Put a string 6 in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "6")
 
 
 def seven():
+    """
+    Put a string 7 in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "7")
 
 
 def eight():
+    """
+    Put a string 8 in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "8")
 
 
 def nine():
+    """
+    Put a string 9 in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "9")
 
 
 def zero():
+    """
+    Put a string 0 in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "0")
 
 
 def add():
+    """
+    Put a string plus sign in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "+")
 
 
 def subtract():
+    """
+    Put a string minus sign in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "-")
 
 
 def divide():
+    """
+    Put a string division sign in the entry field.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + "/")
 
 
 def multiply():
+    """
+    Put a string multiplication sign in the entry field.
+    :return: Nothing
+    """
+
     answer = result.get()
     result.set(answer + "*")
 
 
 def x_square():
+    """
+    Turn the string number in the entry field into a float, square it, and then turn it back to a string.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(str(float(answer) ** 2))
 
 
 def percentage():
+    """
+    Turn the string number in the entry field into a float, divide it by 100, and then turn it back to a string.
+    :return: Nothing
+    """
     answer = result.get()
     result.set(str(float(answer) / 100))
 
 
 def point():
+    """
+    Put a string desmos point in the entry field
+    :return: Nothing
+    """
     answer = result.get()
     result.set(answer + ".")
 
 
 def all_clear():
+    """
+    Clear the entry field by setting the result into blank
+    :return: Nothing
+    """
     result.set("")
 
 
 def evaluate():
+    """
+    Calculate the result by using the eval function
+    :return: Nothing 
+    """
     result.set(eval(result.get()))
 
 
-result = tkinter.StringVar()
+result = tkinter.StringVar()  # Result variable shown in the entry field
 
-calculatorLabel = tkinter.Label(root, text="Jonathan's Super Calculator", font="Verdana 20")
+calculatorLabel = tkinter.Label(root, text="Jonathan's Super Calculator", font="HarryP 24 bold")
 calculatorLabel.grid(row=1, column=1, columnspan=4)
 
 calculatorEntry = tkinter.Entry(root, textvariable=result)
