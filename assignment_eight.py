@@ -1,4 +1,4 @@
-# 11/14/2018
+# 11/16/2018
 # Jonathan Lin
 # GUI Calculator
 # Using GUI to create a calculator which can execute addition, subtraction, multiplication, division,
@@ -183,14 +183,15 @@ def evaluate():
 result = tkinter.StringVar()  # Result variable shown in the entry field
 
 calculatorLabel = tkinter.Label(root, text="Jonathan's Super Calculator", font="HarryP 24 bold")
-calculatorLabel.grid(row=1, column=1, columnspan=4)
+# Create a title in the root window with the name and font above
+calculatorLabel.grid(row=1, column=1, columnspan=4)  # Place the title at row 1 column 1
 
 calculatorEntry = tkinter.Entry(root, textvariable=result)
 calculatorEntry.grid(row=2, column=1, columnspan=4)
 
 allclear = tkinter.Button(root, text="AC", command=all_clear)
 allclear.grid(row=3, column=1)
-
+  
 square = tkinter.Button(root, text="x²", command=x_square)
 square.grid(row=3, column=2)
 
