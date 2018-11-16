@@ -184,66 +184,67 @@ result = tkinter.StringVar()  # Result variable shown in the entry field
 
 calculatorLabel = tkinter.Label(root, text="Jonathan's Super Calculator", font="HarryP 24 bold")
 # Create a title in the root window with the name and font above
-calculatorLabel.grid(row=1, column=1, columnspan=4)  # Place the title at row 1 column 1
+calculatorLabel.grid(row=1, column=1, columnspan=4)  # Place the title at row 1 column 1, and expand it to four columns
 
 calculatorEntry = tkinter.Entry(root, textvariable=result)
 calculatorEntry.grid(row=2, column=1, columnspan=4)
+# Place the entry field at row 2 column 1, and expand it to four columns
 
 allclear = tkinter.Button(root, text="AC", command=all_clear)
-allclear.grid(row=3, column=1)
+allclear.grid(row=3, column=1)  # Place the AC button at row 3 column 1
   
 square = tkinter.Button(root, text="x²", command=x_square)
-square.grid(row=3, column=2)
+square.grid(row=3, column=2)  # Place the square button at row 3 column 2
 
 percent = tkinter.Button(root, text="%", command=percentage)
-percent.grid(row=3, column=3)
+percent.grid(row=3, column=3)  # Place the percent button at row 3 column 3
 
 division = tkinter.Button(root, text="÷", command=divide)
-division.grid(row=3, column=4)
+division.grid(row=3, column=4)  # Place the division button at row 3 column 4
 
 number_one = tkinter.Button(root, text="1", command=one)
-number_one.grid(row=4, column=1)
+number_one.grid(row=4, column=1)  # Place the 1 button at row 4 column 1
 
 number_two = tkinter.Button(root, text="2", command=two)
-number_two.grid(row=4, column=2)
+number_two.grid(row=4, column=2)  # Place the 2 button at row 4 column 2
 
 number_three = tkinter.Button(root, text="3", command=three)
-number_three.grid(row=4, column=3)
+number_three.grid(row=4, column=3)  # Place the 3 button at row 4 column 3
 
 multiplication = tkinter.Button(root, text="×", command=multiply)
-multiplication.grid(row=4, column=4)
+multiplication.grid(row=4, column=4)  # Place the multiplication button at row 4 column 4
 
 number_four = tkinter.Button(root, text="4", command=four)
-number_four.grid(row=5, column=1)
+number_four.grid(row=5, column=1)  # Place the 4 button at row 5 column 1
 
 number_five = tkinter.Button(root, text="5", command=five)
-number_five.grid(row=5, column=2)
+number_five.grid(row=5, column=2)  # Place the 5 button at row 5 column 2
 
 number_six = tkinter.Button(root, text="6", command=six)
-number_six.grid(row=5, column=3)
+number_six.grid(row=5, column=3)  # Place the 6 button at row 5 column 3
 
 addition = tkinter.Button(root, text="+", command=add)
-addition.grid(row=5, column=4)
+addition.grid(row=5, column=4)  # Place the plus button at row 5 column 4
 
 number_seven = tkinter.Button(root, text="7", command=seven)
-number_seven.grid(row=6, column=1)
+number_seven.grid(row=6, column=1)  # Place the 7 button at row 6 column 1
 
 number_eight = tkinter.Button(root, text="8", command=eight)
-number_eight.grid(row=6, column=2)
+number_eight.grid(row=6, column=2)  # Place the 8 button at row 6 column 2
 
 number_nine = tkinter.Button(root, text="9", command=nine)
-number_nine.grid(row=6, column=3)
+number_nine.grid(row=6, column=3)  # Place the 9 button at row 6 column 3
 
 subtraction = tkinter.Button(root, text="-", command=subtract)
-subtraction.grid(row=6, column=4)
+subtraction.grid(row=6, column=4)  # Place the minus button at row 6 column 4
 
 desmosPoint = tkinter.Button(root, text=".", command=point)
-desmosPoint.grid(row=7, column=1)
+desmosPoint.grid(row=7, column=1)  # Place the desmos point button at row 7 column 1
 
 number_zero = tkinter.Button(root, text="0", command=zero)
-number_zero.grid(row=7, column=2)
+number_zero.grid(row=7, column=2)  # Place the 0 button at row 7 column 2
 
 equal = tkinter.Button(root, text="=", command=evaluate)
-equal.grid(row=7, column=4)
+equal.grid(row=7, column=4)  # Place the equal sign button at row 7 column 4
 
 root.mainloop()
